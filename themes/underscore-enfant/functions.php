@@ -22,6 +22,7 @@ function my_theme_enqueue_styles() {
 function extraire_date( $query ) {
     if ($query->is_category('evenements'))
     {
+        
        $query->set( 'posts_per_page', -1 );
        $query->set( 'orderby', 'date' );
        $query->set( 'order', 'asc' );

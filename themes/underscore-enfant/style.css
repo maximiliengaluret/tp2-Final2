@@ -114,6 +114,10 @@ img {
           animation: fade-zoom 3s ease-out normal backwards;
 }
 
+.site-main img:nth-child(1) {
+  width: 100%;
+}
+
 @-webkit-keyframes fade-zoom {
   0% {
     -webkit-transform: scale(0);
@@ -193,7 +197,7 @@ a:hover {
   opacity: 1;
 }
 
-a::after {
+.menu-menu-1-container a::after {
   content: '';
   display: block;
   width: 0;
@@ -203,10 +207,19 @@ a::after {
   transition: width .3s;
 }
 
-a:hover::after {
+.menu-menu-1-container a:hover::after {
   width: 100%;
   -webkit-transition: width .3s;
   transition: width .3s;
+}
+
+.menu-menu-1-container {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.site-title a {
+  display: none;
 }
 
 button,

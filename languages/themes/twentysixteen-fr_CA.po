@@ -1,0 +1,373 @@
+# Translation of Themes - Twenty Sixteen in French (Canada)
+# This file is distributed under the same license as the Themes - Twenty Sixteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-11-01 03:12:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr_CA\n"
+"Project-Id-Version: Themes - Twenty Sixteen\n"
+
+#. Description of the theme
+msgid "Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere."
+msgstr "Twenty Sixteen revisite en le modernisant une mise en page WordPress toujours aussi populaire: l'entête horizontal avec une barre latérale facultative, qui fonctionne tout aussi pour les blogs que pour les sites. Il dispose d'options de couleurs avec de superbes jeux de couleurs par défaut, une composition en grille fluide et harmonieuse utilisant l'approche \"mobile-first\", et un soin apporté jusque dans les moindres détails. Twenty Sixteen vous donnera un site WordPress magnifique dans toutes les situations."
+
+#. Theme Name of the theme
+msgid "Twenty Sixteen"
+msgstr "Twenty Sixteen"
+
+#: functions.php:202
+msgid "Bright Red"
+msgstr "Rouge brillant"
+
+#: functions.php:197
+msgid "Dark Red"
+msgstr "Rouge foncé"
+
+#: functions.php:192
+msgid "Medium Brown"
+msgstr "Marron moyen"
+
+#: functions.php:187
+msgid "Dark Brown"
+msgstr "Marron foncé"
+
+#: functions.php:182
+msgid "Light Blue"
+msgstr "Bleu clair"
+
+#: functions.php:177
+msgid "Bright Blue"
+msgstr "Bleu brillant"
+
+#: functions.php:172
+msgid "Blue Gray"
+msgstr "Bleu gris"
+
+#: functions.php:167
+msgid "White"
+msgstr "Blanc"
+
+#: functions.php:162
+msgid "Light Gray"
+msgstr "Gris clair"
+
+#: functions.php:157
+msgid "Medium Gray"
+msgstr "Gris moyen"
+
+#: functions.php:152
+msgid "Dark Gray"
+msgstr "Gris foncé"
+
+#. translators: %s: Name of current post
+#: template-parts/content.php:53 template-parts/content-page.php:39
+#: template-parts/content-search.php:28 template-parts/content-search.php:43
+#: template-parts/content-single.php:47 image.php:88
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Modifier<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. translators: %s: Name of current post
+#: template-parts/content.php:29 inc/template-tags.php:194
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continuer la lecture de<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: inc/customizer.php:345
+msgid "Red"
+msgstr "Rouge"
+
+#. translators: %s: post title
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Une pensée sur &ldquo;%s&rdquo;"
+
+#: searchform.php:16
+msgctxt "submit button"
+msgid "Search"
+msgstr "Rechercher"
+
+#: searchform.php:14
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Recherche&hellip;"
+
+#: searchform.php:13
+msgctxt "label"
+msgid "Search for:"
+msgstr "Rechercher&nbsp;:"
+
+#: footer.php:30
+msgid "Footer Social Links Menu"
+msgstr "Menu de liens sociaux de pied de page"
+
+#: footer.php:17
+msgid "Footer Primary Menu"
+msgstr "Menu principal de pied de page"
+
+#: functions.php:267
+msgid "Add widgets here to appear in your sidebar."
+msgstr "Ajoutez des widgets ici pour les afficher dans votre colonne latérale."
+
+#: template-parts/content.php:14
+msgid "Featured"
+msgstr "En vedette"
+
+#: template-parts/content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Le contenu demandé n&rsquo;a pu être trouvé. Pourquoi ne pas lancer une recherche? "
+
+#: template-parts/content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Désolé, mais rien ne correspond à vos critères. Réessayez en modifiant les termes de recherche."
+
+#: template-parts/content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Vous êtes prêt à publier votre premier article? <a href=\"%1$s\">Commencez ici</a>."
+
+#: template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr "Rien n’a été trouvé"
+
+#: template-parts/biography.php:33
+msgid "View all posts by %s"
+msgstr "Voir tous les articles de %s"
+
+#: template-parts/biography.php:28
+msgid "Author:"
+msgstr "Auteur :"
+
+#: single.php:42
+msgid "Previous post:"
+msgstr "Article précédent&nbsp;:"
+
+#: single.php:41
+msgid "Previous"
+msgstr "Précédent"
+
+#: single.php:39
+msgid "Next post:"
+msgstr "Article Suivant&nbsp;:"
+
+#: single.php:38
+msgid "Next"
+msgstr "Suivant"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour&nbsp;: %s"
+
+#: inc/template-tags.php:112
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr "Étiquettes"
+
+#: inc/template-tags.php:103
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr "Catégories"
+
+#: inc/template-tags.php:99 inc/template-tags.php:108
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:83
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr "Publié le"
+
+#: inc/template-tags.php:40
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Format"
+
+#: inc/template-tags.php:52
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Laisser un commentaire<span class=\"screen-reader-text\"> sur %s</span>"
+
+#: inc/template-tags.php:26
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr "Auteur"
+
+#: functions.php:207 inc/customizer.php:355
+msgid "Yellow"
+msgstr "Jaune"
+
+#: inc/customizer.php:335
+msgid "Gray"
+msgstr "Gris"
+
+#: inc/customizer.php:325
+msgid "Dark"
+msgstr "Sombre"
+
+#: inc/customizer.php:315
+msgid "Default"
+msgstr "Valeur par défaut"
+
+#: inc/customizer.php:221
+msgid "Main Text Color"
+msgstr "Couleur primaire du texte"
+
+#: inc/customizer.php:242
+msgid "Secondary Text Color"
+msgstr "Couleur secondaire du texte"
+
+#: inc/customizer.php:200
+msgid "Link Color"
+msgstr "Couleur des liens"
+
+#: inc/customizer.php:176
+msgid "Page Background Color"
+msgstr "Couleur du fond de page"
+
+#: single.php:31 image.php:107
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">Publié dans</span><span class=\"post-title\">%title</span>"
+
+#: inc/back-compat.php:41 inc/back-compat.php:54 inc/back-compat.php:72
+msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Sixteen ne fonctionne qu'à partir de WordPress 4.4. Vous utilisez la version %s. Veuillez mettre à jour et réessayer."
+
+#: inc/customizer.php:153
+msgid "Base Color Scheme"
+msgstr "Jeu de couleurs de base"
+
+#: image.php:77
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "Taille réelle"
+
+#: template-parts/content.php:36 template-parts/content-page.php:24
+#: template-parts/content-single.php:26 image.php:58
+msgid "Pages:"
+msgstr "Pages&nbsp;:"
+
+#: image.php:26
+msgid "Next Image"
+msgstr "Image suivante"
+
+#: image.php:25
+msgid "Previous Image"
+msgstr "Image précédente"
+
+#: header.php:50
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:28
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: functions.php:407
+msgid "expand child menu"
+msgstr "ouvrir le sous-menu"
+
+#: functions.php:408
+msgid "collapse child menu"
+msgstr "fermer le sous-menu"
+
+#. translators: If there are characters in your language that are not supported
+#. by Merriweather, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:317
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "activée"
+
+#. translators: If there are characters in your language that are not supported
+#. by Montserrat, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:322
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:279 functions.php:291
+msgid "Appears at the bottom of the content on posts and pages."
+msgstr "S’affiche en bas du contenu des articles et des pages."
+
+#. translators: If there are characters in your language that are not supported
+#. by Inconsolata, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:327
+msgctxt "Inconsolata font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:277
+msgid "Content Bottom 1"
+msgstr "Contenu du bas 1"
+
+#: functions.php:289
+msgid "Content Bottom 2"
+msgstr "Contenu du bas 2"
+
+#: functions.php:265
+msgid "Sidebar"
+msgstr "Colonne latérale"
+
+#: functions.php:93 header.php:67
+msgid "Social Links Menu"
+msgstr "Menu des Liens Sociaux"
+
+#: functions.php:92 header.php:54
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: footer.php:61
+msgid "Proudly powered by %s"
+msgstr "Fièrement propulsé par %s"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s réflexion au sujet de &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s réflexions au sujet de &ldquo;%2$s&rdquo;"
+
+#: archive.php:53 template-parts/content.php:40
+#: template-parts/content-page.php:28 template-parts/content-single.php:30
+#: search.php:41 index.php:50 image.php:62
+msgid "Page"
+msgstr "Page"
+
+#: archive.php:52 search.php:40 index.php:49
+msgid "Next page"
+msgstr "Page suivante"
+
+#: archive.php:51 search.php:39 index.php:48
+msgid "Previous page"
+msgstr "Page précédente"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Aucun contenu n&rsquo; a été trouvé à l&rsquo;adresse demandée. Pourquoi ne pas essayer une recherche? "
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups! Cette page est introuvable."
+
+#. Author of the theme
+msgid "the WordPress team"
+msgstr "L'équipe WordPress"
+
+#. Theme URI of the theme
+msgid "https://wordpress.org/themes/twentysixteen/"
+msgstr "https://fr-ca.wordpress.org/themes/twentysixteen/"
+
+#. Author URI of the theme
+#: footer.php:60
+msgid "https://wordpress.org/"
+msgstr "https://fr-ca.wordpress.org/"

@@ -76,6 +76,7 @@ while ( $query2->have_posts() ) {
 $query2->the_post();
 echo'<div class="conteneur">';
 echo '<h4>' . get_the_title() . '</h4>';
+
 echo '<p>'. get_the_excerpt().'</p>';
 echo'</div>';
 echo'<div class="image">';

@@ -146,6 +146,23 @@ a:active {
   font-size: 0.6em;
 }
 
+.tuiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.tuile {
+  -webkit-animation: 1s ease 0s pulsation infinite;
+          animation: 1s ease 0s pulsation infinite;
+  background: #00ff00;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 25%;
+  height: 100px;
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -410,24 +427,19 @@ a:hover {
   }
 }
 
-.attachment-full-0 {
-  opacity: 0 0;
+.tuile:nth-child(1) {
+  -webkit-animation-delay: 0.33333s;
+          animation-delay: 0.33333s;
 }
 
-.attachment-full-1 {
-  opacity: 0 1;
+.tuile:nth-child(2) {
+  -webkit-animation-delay: 0.66667s;
+          animation-delay: 0.66667s;
 }
 
-.attachment-full-2 {
-  opacity: 0 2;
-}
-
-.attachment-full-3 {
-  opacity: 0 3;
-}
-
-.attachment-full-4 {
-  opacity: 0 4;
+.tuile:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes fade-zoom {
@@ -455,6 +467,42 @@ a:hover {
             transform: scale(1.1);
   }
   100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulsation {
+  0% {
+    background: #00ff00;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    background: #00cc00;
+    -webkit-transform: scale(1.035);
+            transform: scale(1.035);
+  }
+  50% {
+    background: #00ff00;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsation {
+  0% {
+    background: #00ff00;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    background: #00cc00;
+    -webkit-transform: scale(1.035);
+            transform: scale(1.035);
+  }
+  50% {
+    background: #00ff00;
     -webkit-transform: scale(1);
             transform: scale(1);
   }

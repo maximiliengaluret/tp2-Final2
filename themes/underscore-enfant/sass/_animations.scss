@@ -9,14 +9,16 @@
 	}
 }
 
-@for $i from 0 through 4 {
-
-	.attachment-full-#{$i} {
-	  opacity: 0  #{$i}
+@for $i from 1 through 3 {
+	.tuile {
+	  
+	  &:nth-child(#{$i}) {
+		
+		animation-delay: $i * (1s / 3);
+	  }
 	}
   }
-
-
+  
 @keyframes fade-zoom {
 	0% {
 		transform: scale(0);
@@ -30,3 +32,20 @@
 		transform: scale(1);
 	}
 }
+
+@keyframes pulsation {
+	0% {
+	  background: $tuile-bg;
+	  transform: scale(1);
+	}
+	
+	25% {
+	  background: darken($tuile-bg, 10%);
+	  transform: scale(1.035);
+	}
+	
+	50% {
+	  background: $tuile-bg;
+	  transform: scale(1);
+	}
+  }

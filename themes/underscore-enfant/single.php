@@ -17,6 +17,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
             if (has_category('evenements')){
+				
                 echo '///////////////////////  EVENEMENTS ////////////////////////////////////';
                 get_template_part( 'template-parts/content', 'evenements' );
             }

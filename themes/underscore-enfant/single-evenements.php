@@ -16,8 +16,7 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
-			the_post();
-
+			
             the_title();
             the_excerp();
             the_date();

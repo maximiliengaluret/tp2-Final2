@@ -1,5 +1,3 @@
-
-
 .menu-menu-1-container {
 	display: flex;
 	list-style: none;
@@ -23,11 +21,11 @@ a {
 	opacity: 0.5;
 }
 
-.menu-menu-1-container{
-    color: #edf5e1;
-    
-    }
-    
+.menu-menu-1-container {
+	color: #edf5e1;
+
+}
+
 
 a:hover {
 	opacity: 1;
@@ -57,7 +55,8 @@ a:hover {
 
 
 
-#coche, #burger{
+#coche,
+#burger {
 
 	display: none;
 }
@@ -67,46 +66,48 @@ a:hover {
 @media screen and (max-width: 605px) {
 
 
-	 #burger{
+	#burger {
 
 		display: block;
 		cursor: pointer;
-	
+
 	}
 
-#coche:checked ~ .menu-menu-1-container{
-	transform : translateY(0);
-}
+	#coche:checked~.menu-menu-1-container {
+		transform: translateY(0);
+		animation: fade-in 0.8s;
+	}
 
-.fas{
-	font-size: 2rem;
-	
-}
-#burger{
-	font-size: 2rem;
-	position: absolute;
-    left: 50px;
-    top: 100px;
-}
+	.fas {
+		font-size: 2rem;
 
-.menu-menu-1-container {
-	transform : translateY(-300px);
-	transition : transform 1s;
-}
+	}
+
+	#burger {
+		font-size: 2rem;
+		position: absolute;
+		left: 50px;
+		top: 100px;
+	}
+
+	.menu-menu-1-container {
+		transform: translateY(-300px);
+		transition: transform 1s;
+	}
 
 
-#coche:checked ~ #site-navigation{
-	height:500px;
-	
-}
+	#coche:checked~#site-navigation {
+		height: 500px;
 
-#site-navigation{
+	}
 
-	//height:100px;
-	transition : transform 1s;
-}
+	#site-navigation {
 
-	
+		//height:100px;
+		transition: transform 1s;
+	}
+
+
 	.menu-menu-1-container ul {
 		display: flex;
 		flex-direction: column;
@@ -120,7 +121,7 @@ a:hover {
 		text-align: center;
 		margin-bottom: 15px;
 	}
-	
+
 	.menu-menu-1-container a::after {
 		content: '';
 		display: block;

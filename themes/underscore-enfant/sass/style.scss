@@ -60,6 +60,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Elements
 --------------------------------------------------------------*/
 //@import "elements/elements";
+.menu-toggle {
+
+	display: none;
+}
 
 .flex:nth-of-type(2) {
 
@@ -76,15 +80,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .conteneur {
 
 	display: inline-grid;
-    grid-template-columns: 20% 33%;
+	grid-template-columns: 20% 33%;
 }
 
-.texte{
+.texte {
 
 	margin-top: -25px;
 }
 
-.image{
+.image {
 
 	padding-left: 15px;
 }
@@ -129,7 +133,7 @@ img {
 
 }
 
-.site-main img:nth-child(1){
+.site-main img:nth-child(1) {
 
 	width: 100%;
 }
@@ -148,7 +152,10 @@ img {
 	}
 }
 
+.flex h4 {
 
+	font-size: 0.6em;
+}
 
 
 
@@ -167,11 +174,8 @@ img {
 
 .main-navigation {
 	display: flex;
-
-
 	width: 100%;
 	justify-content: space-between;
-
 }
 
 .menu-menu-1-container {
@@ -220,13 +224,13 @@ a:hover {
 
 }
 
-.menu-menu-1-container{
+.menu-menu-1-container {
 
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
 
-.site-title a{
+.site-title a {
 
 	display: none;
 }
@@ -252,8 +256,32 @@ input[type="submit"] {
 
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 605px) {
 
+	.toggler:checked ~ #site-navigation{
+		display: none;
+		
+	}
+
+	.menu-menu-1-container ul {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.menu-menu-1-container ul li {
+		text-align: center;
+	}
+	
+	.menu-menu-1-container a::after {
+		content: '';
+		display: block;
+		width: 0;
+		height: 2px;
+		background: rgb(255, 255, 255)
+	}
 
 
 }

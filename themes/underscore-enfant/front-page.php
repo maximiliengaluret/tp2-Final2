@@ -2,10 +2,14 @@
 
 get_header();
 
-
+echo'<div class="burger">';
+echo '<input type="checkbox" class="toggler">';
+echo '<div class="hambergur"><div></div></div>';
+echo '</div>';
 
 // The Query
 $args = array(
+    
 "category_name" => "nouvelle",
 "posts_per_page" => 3,
 "orderby" => "date",
@@ -73,15 +77,19 @@ wp_reset_postdata();
 <?php
 // The Loop
 while ( $query2->have_posts() ) {
-$query2->the_post();
-echo'<div class="conteneur">';
-echo '<h4>' . get_the_title() . '</h4>';
+    $query2->the_post();
 
-echo '<p>'. get_the_excerpt().'</p>';
-echo'</div>';
-echo'<div class="image">';
-the_post_thumbnail('thumbnail');
-echo'</div>';
+    echo'<div class="conteneur">';
+    
+    echo'<div class="image">';
+    the_post_thumbnail('thumbnail');
+    echo'</div>';
+    echo'<div class="texte">';
+        echo '<a href="'.get_post_permalink().'">' . get_the_title() . '</a>';
+        echo '<p>'.   get_the_excerpt().'</p>';
+        echo'</div>';
+    echo'</div>';
+    
 }
 /* Restore original Post Data
 * NB: Because we are using new WP_Query we aren't stomping on the

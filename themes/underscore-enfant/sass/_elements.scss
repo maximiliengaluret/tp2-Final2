@@ -44,7 +44,7 @@ a:active{
 
 .wrap{
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: 1fr 1fr 1fr;
 }
 
 .conteneur {
@@ -68,9 +68,10 @@ grid-template-columns: repeat(3, 1fr);
 	display: none;
 }
 
-img {
+.attachment-full  {
 
-	animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	//animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-zoom 3s both;
 }
 
 

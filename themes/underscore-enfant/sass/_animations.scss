@@ -9,6 +9,13 @@
 	}
 }
 
+@for $i from 0 through 4 {
+
+	.attachment-full-#{$i} {
+	  opacity: 0  #{$i}
+	}
+  }
+
 
 @keyframes fade-zoom {
 	0% {

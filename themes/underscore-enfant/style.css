@@ -98,8 +98,8 @@ a:active {
 .wrap {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .conteneur {
@@ -121,9 +121,9 @@ a:active {
   display: none;
 }
 
-img {
-  -webkit-animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+.attachment-full {
+  -webkit-animation: fade-zoom 3s both;
+          animation: fade-zoom 3s both;
 }
 
 .grilleCss > img {
@@ -408,6 +408,26 @@ a:hover {
   100% {
     opacity: 1;
   }
+}
+
+.attachment-full-0 {
+  opacity: 0 0;
+}
+
+.attachment-full-1 {
+  opacity: 0 1;
+}
+
+.attachment-full-2 {
+  opacity: 0 2;
+}
+
+.attachment-full-3 {
+  opacity: 0 3;
+}
+
+.attachment-full-4 {
+  opacity: 0 4;
 }
 
 @-webkit-keyframes fade-zoom {

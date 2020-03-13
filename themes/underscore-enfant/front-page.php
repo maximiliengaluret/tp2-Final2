@@ -38,7 +38,7 @@ the_post_thumbnail('full');
 endwhile; // End of the loop.
 ?>
 
-<h1>Les Nouvelles</h1>
+<h1 class='titreNouvelle'>Les Nouvelles</h1>
 
 
 <!-- FIN EVENEMENTS -->

@@ -16,12 +16,23 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
+            if (has_category('evenements')){
+                echo '///////////////////////  EVENEMENTS ////////////////////////////////////';
+                get_template_part( 'template-parts/content', 'evenements' );
+            }
+            else
+            {
+				echo '///////////////////////  AUTRES ////////////////////////////////////';
+                get_template_part( 'template-parts/content', get_post_type() );
 
-			get_template_part( 'template-parts/content', get_post_type() );
+            }
+            
+			
+
+
             the_title();
             the_author();
-			the_excerpt();
-			
+            the_excerpt();
             the_date();
 
 

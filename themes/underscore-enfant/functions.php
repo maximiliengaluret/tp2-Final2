@@ -22,6 +22,7 @@ if (! is_front_page() && $query->is_category('evenements'))
 {
 $query->set( 'posts_per_page', -1 );
 $query->set( 'orderby', 'date' );
+
 $query->set( 'order', 'asc' );
 }
 }

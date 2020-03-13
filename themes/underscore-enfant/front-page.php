@@ -2,14 +2,10 @@
 
 get_header();
 
-echo'<div class="burger">';
-echo '<input type="checkbox" class="toggler">';
-echo '<div class="hambergur"><div></div></div>';
-echo '</div>';
+
 
 // The Query
 $args = array(
-    
 "category_name" => "nouvelle",
 "posts_per_page" => 3,
 "orderby" => "date",
@@ -49,14 +45,18 @@ endwhile; // End of the loop.
 
 <?php
 // The Loop
+echo'<div class="wrap">';
 while ( $query1->have_posts() ) {
 
 $query1->the_post();
+
 echo'<div class="flex">';
 echo '<h4>' . get_the_title() . '</h4>';
 the_post_thumbnail('thumbnail');
 echo'</div>';
+
 }
+echo'</div>';
 
 ?>
 

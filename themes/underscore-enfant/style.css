@@ -72,11 +72,15 @@ body, a {
 }
 
 a:visited {
-  color: #edf5e1;
+  color: #ffffff;
 }
 
 a:hover {
-  color: #edf5e1;
+  color: #c3ffa7;
+}
+
+a:active {
+  color: #ffafaf;
 }
 
 .texte {

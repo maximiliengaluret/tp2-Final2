@@ -26,3 +26,4 @@ $query->set( 'order', 'asc' );
 }
 }
 add_action( 'pre_get_posts', 'extraire_date' );
+

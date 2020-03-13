@@ -65,18 +65,34 @@ a:hover {
 
 @media screen and (max-width: 605px) {
 
+	#primary-menu{
+
+		display: none;
+	}
+
 
 	#burger {
 
 		display: block;
 		cursor: pointer;
-
 	}
 
 	#coche:checked~.menu-menu-1-container {
 		transform: translateY(0);
 		animation: fade-in 0.8s;
 	}
+
+	#coche:checked~#burger~.menu-menu-1-container > #primary-menu {
+		display: block;
+		
+	}
+
+	#coche:checked:checked~label{
+    
+		animation: jello-horizontal 0.8s both;
+	}
+
+
 
 	.fas {
 		font-size: 2rem;

@@ -9,7 +9,7 @@ body{
 
 body,a {
 
-	color: #edf5e1;
+	color: $couleurBlanche;
 }
 
 a:visited{
@@ -68,11 +68,6 @@ grid-template-columns: 1fr 1fr 1fr;
 	display: none;
 }
 
-.attachment-full  {
-
-	//animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: fade-zoom 3s both;
-}
 
 
 .grilleCss>img {

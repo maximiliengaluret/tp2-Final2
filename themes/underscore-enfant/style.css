@@ -52,6 +52,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Extends
 --------------------------------------------------------------*/
+.attachment-full, .attachment-full.size-full {
+  -webkit-animation: fade-zoom 3s both;
+          animation: fade-zoom 3s both;
+}
+
+.size-full.attachment-full {
+  cursor: pointer;
+}
+
+.size-full.attachment-full:hover {
+  opacity: 0.5;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -119,11 +132,6 @@ a:active {
 
 .site-description {
   display: none;
-}
-
-.attachment-full {
-  -webkit-animation: fade-zoom 3s both;
-          animation: fade-zoom 3s both;
 }
 
 .grilleCss > img {
@@ -511,4 +519,9 @@ a:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.site-info {
+  text-align: center;
+  color: #ebebeb;
+  padding-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */

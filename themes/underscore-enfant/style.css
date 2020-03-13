@@ -350,7 +350,8 @@ a:hover {
   margin-top: 40px;
 }
 
-#coche, #burger {
+#coche,
+#burger {
   display: none;
 }
 
@@ -362,6 +363,8 @@ a:hover {
   #coche:checked ~ .menu-menu-1-container {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-animation: fade-in 0.8s;
+            animation: fade-in 0.8s;
   }
   .fas {
     font-size: 2rem;

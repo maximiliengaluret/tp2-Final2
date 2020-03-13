@@ -14,12 +14,17 @@ body,a {
 
 a:visited{
 
-	color:  #edf5e1;
+	color:  $couleurVisited;
 }
 
 a:hover{
 
-	color:  #edf5e1;
+	color:  $couleurHover;
+}
+
+
+a:active{
+	color: $couleurActive;
 }
 
 

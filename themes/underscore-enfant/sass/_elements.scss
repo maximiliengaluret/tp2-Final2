@@ -1,0 +1,95 @@
+/*Design général du site*/
+
+body{
+
+	font-family: $policePrincipale;
+	background-color: $couleurFond;
+
+}
+
+body,a {
+
+	color: #edf5e1;
+}
+
+a:visited{
+
+	color:  #edf5e1;
+}
+
+a:hover{
+
+	color:  #edf5e1;
+}
+
+
+.texte{
+
+	width: 200%;
+}
+
+.texte p{
+
+	font-size: 0.8em;
+}
+
+.texte a {
+
+	text-decoration: none;
+}
+
+.wrap{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.conteneur {
+
+	display: inline-grid;
+	grid-template-columns: 20% 33%;
+}
+
+.texte {
+
+	padding-left: 15px;
+}
+
+.image {
+
+	padding-left: 15px;
+}
+
+.site-description {
+
+	display: none;
+}
+
+img {
+
+	animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+.grilleCss>img {
+
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	animation: fade-zoom 3s ease-out normal backwards;
+
+}
+
+.site-main img:nth-child(1) {
+
+	width: 100%;
+}
+
+
+.flex h4 {
+
+	font-size: 0.6em;
+}
+
+

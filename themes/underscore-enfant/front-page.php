@@ -38,7 +38,7 @@ the_post_thumbnail('full');
 endwhile; // End of the loop.
 ?>
 
-<h1>Les Nouvelles</h1>
+<h1 class='titreNouvelle'>Les Nouvelles</h1>
 
 
 <!-- FIN EVENEMENTS -->
@@ -101,6 +101,13 @@ wp_reset_postdata();
 
 
 ?>
+
+<h1>Boucle en SCSS</h1>
+<div class="tuiles">
+  <div class="tuile"></div>
+  <div class="tuile"></div>
+  <div class="tuile"></div>
+</div>
 
         </main><!-- #main -->
     </div><!-- #primary -->

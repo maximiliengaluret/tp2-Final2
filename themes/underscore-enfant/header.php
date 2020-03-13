@@ -50,8 +50,6 @@
 	
 		<input id='coche' type="checkbox" class="menu-toggle">
 		<label id='burger' for='coche'><i class="fas fa-bars"></i></label>
-
-
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

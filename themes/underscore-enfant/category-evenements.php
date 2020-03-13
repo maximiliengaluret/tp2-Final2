@@ -22,8 +22,15 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
+			<div class="mois">
+				<h2 style='grid-area = 1/1'>Septembre</h2>
+				<h2 style='grid-area = 1/2'>Octobre</h2>
+				<h2 style='grid-area = 1/3'>Novembre</h2>
 
+			</div>
+             
             <div class="zeuGrille">
+
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :

@@ -152,6 +152,41 @@ img {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-title a {
+  display: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #2b2b2b;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -198,12 +233,29 @@ img {
 ## Grille événements
 --------------------------------------------------------------*/
 .zeuGrille {
+  border: 2px solid white;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
       grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
+}
+
+.zeuGrille a {
+  text-decoration: none;
+}
+
+.mois {
+  border: 2px solid white;
+  border-bottom: 0px solid white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -215,16 +267,6 @@ img {
 /*--------------------------------------------------------------
 # Entete
 --------------------------------------------------------------*/
-.main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .menu-menu-1-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,31 +323,6 @@ a:hover {
 .menu-menu-1-container {
   margin-bottom: 40px;
   margin-top: 40px;
-}
-
-.site-title a {
-  display: none;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  display: inline-block;
-  padding: 0.3em 1.2em;
-  margin: 0 0.1em 0.1em 0;
-  border: 0.16em solid rgba(255, 255, 255, 0);
-  border-radius: 2em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #2b2b2b;
-  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-  text-align: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 #coche, #burger {

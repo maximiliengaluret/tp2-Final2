@@ -44,6 +44,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Extends
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -52,16 +61,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+/*Design général du site*/
 body {
-  background-color: #222629;
+  font-family: "Sen", sans-serif;
+  background-color: #242424;
 }
 
 body, a {
   color: #edf5e1;
 }
 
-.menu-menu-1-container {
-  color: #edf5e1;
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #c3ffa7;
+}
+
+a:active {
+  color: #ffafaf;
 }
 
 .texte {
@@ -107,24 +126,6 @@ img {
           animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .grilleCss > img {
   height: 100vh;
   width: 100%;
@@ -139,36 +140,6 @@ img {
 
 .site-main img:nth-child(1) {
   width: 100%;
-}
-
-@-webkit-keyframes fade-zoom {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes fade-zoom {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
 }
 
 .flex h4 {
@@ -189,60 +160,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.menu-menu-1-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  font-size: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.menu-menu-1-container ul li a {
-  color: white;
-  font-weight: bold;
-}
-
-.menu-menu-1-container ul li {
-  color: white;
-}
-
-a {
-  padding-right: 35px;
-  opacity: 0.5;
-}
-
-a:hover {
-  opacity: 1;
-}
-
-.menu-menu-1-container a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: white;
-  -webkit-transition: width .3s;
-  transition: width .3s;
-}
-
-.menu-menu-1-container a:hover::after {
-  width: 100%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
-}
-
-.menu-menu-1-container {
-  margin-bottom: 40px;
-  margin-top: 40px;
 }
 
 .site-title a {
@@ -268,71 +185,6 @@ input[type="submit"] {
   text-align: center;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-}
-
-#coche, #burger {
-  display: none;
-}
-
-@media screen and (max-width: 605px) {
-  #burger {
-    display: block;
-    cursor: pointer;
-  }
-  #coche:checked ~ .menu-menu-1-container {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  .fas {
-    font-size: 2rem;
-  }
-  #burger {
-    font-size: 2rem;
-    position: absolute;
-    left: 50px;
-    top: 100px;
-  }
-  .menu-menu-1-container {
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
-  }
-  #coche:checked ~ #site-navigation {
-    height: 300px;
-  }
-  #site-navigation {
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
-  }
-  .menu-menu-1-container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 25%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-  .menu-menu-1-container ul li {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .menu-menu-1-container a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: white;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -394,5 +246,184 @@ input[type="submit"] {
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Entete
+--------------------------------------------------------------*/
+.menu-menu-1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu-menu-1-container ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+.menu-menu-1-container ul li {
+  color: white;
+}
+
+a {
+  padding-right: 35px;
+  opacity: 0.5;
+}
+
+.menu-menu-1-container {
+  color: #edf5e1;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.menu-menu-1-container a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.menu-menu-1-container a:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.menu-menu-1-container {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#coche, #burger {
+  display: none;
+}
+
+@media screen and (max-width: 605px) {
+  #burger {
+    display: block;
+    cursor: pointer;
+  }
+  #coche:checked ~ .menu-menu-1-container {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .fas {
+    font-size: 2rem;
+  }
+  #burger {
+    font-size: 2rem;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  .menu-menu-1-container {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  #coche:checked ~ #site-navigation {
+    height: 500px;
+  }
+  #site-navigation {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  .menu-menu-1-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .menu-menu-1-container ul li {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .menu-menu-1-container a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+  }
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fade-zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
 --------------------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */
